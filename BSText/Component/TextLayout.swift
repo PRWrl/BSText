@@ -3024,9 +3024,9 @@ private func TextGetRunsMaxMetric(runs: CFArray, xHeight: UnsafeMutablePointer<C
             }
         }
     }
-    if xHeight.pointee != 0 {
-        xHeight.pointee = maxXHeight
-    }
+
+    xHeight.pointee = maxXHeight
+    
     if underlinePosition != nil {
         underlinePosition!.pointee = maxUnderlinePos
     }
